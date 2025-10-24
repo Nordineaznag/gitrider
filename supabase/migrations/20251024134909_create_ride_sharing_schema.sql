@@ -138,6 +138,19 @@ CREATE POLICY "Users can view own rides"
   TO authenticated
   USING (auth.uid() = user_id OR auth.uid() = driver_id);
 
+CREATE POLICY "Drivers can view available rides"
+  ON rides FOR SELECT
+  TO authenticated
+  USING (
+    EXISTS (
+      SELECT 1 FROM driver_profiles
+      WHERE driver_profiles.id = auth.uid()
+      AND driver_profiles.is_available = true
+    )
+    AND status = 'requested'
+    AND driver_id IS NULL
+  );
+
 CREATE POLICY "Users can create rides"
   ON rides FOR INSERT
   TO authenticated
