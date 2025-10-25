@@ -65,11 +65,15 @@ export function LoginForm() {
     <div className="w-full max-w-md mx-auto">
       {/* App Logo - iOS Style */}
       <div className="text-center mb-8">
-        <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-[#fdb927] to-[#f59e0b] rounded-[22.5%] shadow-lg shadow-[#fdb927]/30 mb-4">
-          <Car className="w-11 h-11 text-white" />
+        <div className="inline-flex items-center justify-center mb-4">
+          <img
+            src="/getride-logo.png"
+            alt="Getride"
+            className="w-20 h-20 object-contain"
+          />
         </div>
         <h1 className="text-3xl font-bold text-gray-900 tracking-tight">
-          Ride App
+          Getride
         </h1>
         <p className="text-[15px] text-gray-600 mt-1">
           Your journey starts here

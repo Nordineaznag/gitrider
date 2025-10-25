@@ -24,7 +24,7 @@ export function UserDashboard() {
       <div className="ios-navbar">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="flex items-center justify-between h-14">
-            <h1 className="text-xl font-semibold text-gray-900">Ride App</h1>
+            <h1 className="text-xl font-semibold text-gray-900">Getride</h1>
           </div>
         </div>
       </div>

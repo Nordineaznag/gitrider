@@ -100,8 +100,8 @@ export default function RootLayout({
           content="#1E73E8"
           media="(prefers-color-scheme: light)"
         />
-        <title>GitRide — Order a Ride</title>
-        <meta name="application-name" content="GitRide" />
+        <title>Getride — Order a Ride</title>
+        <meta name="application-name" content="Getride" />
         <meta
           name="description"
           content="Your reliable ride-sharing companion with real-time tracking. Fast, secure, and available 24/7."
@@ -115,7 +115,7 @@ export default function RootLayout({
           name="apple-mobile-web-app-status-bar-style"
           content="black-translucent"
         />
-        <meta name="apple-mobile-web-app-title" content="GitRide" />
+        <meta name="apple-mobile-web-app-title" content="Getride" />
         <link rel="apple-touch-icon" href="/appImages/ios/180.png" />
         <link
           rel="apple-touch-icon"
@@ -160,20 +160,20 @@ export default function RootLayout({
 
         {/* Open Graph / Social Media */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="GitRide - Order a Ride" />
+        <meta property="og:title" content="Getride - Order a Ride" />
         <meta
           property="og:description"
-          content="GitRide — your reliable ride-sharing companion with real-time tracking"
+          content="Getride — your reliable ride-sharing companion with real-time tracking"
         />
         <meta property="og:image" content="/appImages/ios/1024.png" />
-        <meta property="og:site_name" content="GitRide" />
+        <meta property="og:site_name" content="Getride" />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="GitRide - Order a Ride" />
+        <meta name="twitter:title" content="Getride - Order a Ride" />
         <meta
           name="twitter:description"
-          content="GitRide — your reliable ride-sharing companion with real-time tracking"
+          content="Getride — your reliable ride-sharing companion with real-time tracking"
         />
         <meta name="twitter:image" content="/appImages/ios/1024.png" />
 
@@ -182,7 +182,7 @@ export default function RootLayout({
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
-        <meta name="author" content="GitRide" />
+        <meta name="author" content="Getride" />
 
         {/* DNS Prefetch & Preconnect */}
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
@@ -199,7 +199,7 @@ export default function RootLayout({
 
         {/* Resource Hints */}
         <link rel="preload" href="/appImages/ios/512.png" as="image" />
-        <link rel="canonical" href="https://gitride.com" />
+        <link rel="canonical" href="https://getride.com" />
 
         {/* Color Scheme */}
         <meta name="color-scheme" content="dark light" />
@@ -219,16 +219,16 @@ export default function RootLayout({
         />
       </head>
       <body className="overflow-x-hidden">
-        {/* Top navigation with GitRide logo */}
+        {/* Top navigation with Getride logo */}
         <header className="ios-navbar">
           <div className="container-safe flex items-center gap-3 py-3 px-4">
             <a href="/" className="inline-flex items-center gap-3">
               <img
                 src="/getride-logo.png"
-                alt="GitRide"
+                alt="Getride"
                 className="h-8 w-auto"
               />
-              <span className="text-lg font-semibold">GitRide</span>
+              <span className="text-lg font-semibold">Getride</span>
             </a>
           </div>
         </header>

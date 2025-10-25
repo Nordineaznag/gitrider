@@ -1,7 +1,7 @@
 {
-  "name": "GitRide - Order a Ride",
-  "short_name": "GitRide",
-  "description": "GitRide — your reliable ride-sharing companion with real-time tracking",
+  "name": "Getride - Order a Ride",
+  "short_name": "Getride",
+  "description": "Getride — your reliable ride-sharing companion with real-time tracking",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#F2F2F7",
@@ -23,17 +23,17 @@
   ],
   "categories": ["transportation", "travel"],
   "shortcuts": [
+    {
+      "name": "Order a Ride",
+      "short_name": "Order",
+      "description": "Quickly order a new ride",
+      "url": "/?action=book",
+      "icons": [
         {
-          "name": "Order a Ride",
-          "short_name": "Order",
-          "description": "Quickly order a new ride",
-          "url": "/?action=book",
-          "icons": [
-            {
-              "src": "/appImages/android/android-launchericon-192-192.png",
-              "sizes": "192x192"
-            }
-          ]
+          "src": "/appImages/android/android-launchericon-192-192.png",
+          "sizes": "192x192"
         }
+      ]
+    }
   ]
 }
