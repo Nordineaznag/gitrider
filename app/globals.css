@@ -13,11 +13,13 @@
         --popover: 0 0% 100%;
         --popover-foreground: 0 0% 13%;
 
-        /* Brand Colors */
-        --primary: 45 93% 58%;
-        --primary-foreground: 0 0% 13%;
-        --secondary: 160 84% 39%;
-        --secondary-foreground: 0 0% 100%;
+    /* Brand Colors (Getride) */
+    /* Primary set to Getride blue: approx. #1E73E8 -> hsl(215 82% 51%) */
+    --primary: 215 82% 51%;
+    --primary-foreground: 0 0% 100%;
+    /* Secondary can remain greenish for accents */
+    --secondary: 160 84% 39%;
+    --secondary-foreground: 0 0% 100%;
 
         /* UI Colors - iOS Light */
         --muted: 220 14% 96%;
@@ -184,22 +186,27 @@
         }
     }
 
-    /* iOS Primary Button */
+    /* iOS Primary Button - use brand primary variable */
     .ios-button-primary {
-        @apply bg-[#007AFF] text-white rounded-lg font-semibold;
+        color: hsl(var(--primary-foreground));
+        background-color: hsl(var(--primary));
+        border-radius: 0.5rem;
+        font-weight: 600;
         min-height: 50px;
-        box-shadow: 0 2px 8px rgba(0, 122, 255, 0.25);
+        box-shadow: 0 2px 8px hsl(var(--primary) / 0.25);
     }
 
     @media (hover: none) {
         .ios-button-primary:active {
-            @apply bg-[#0051D5] scale-95;
+            transform: scale(.95);
+            filter: brightness(.9);
         }
     }
 
     /* iOS Secondary Button */
     .ios-button-secondary {
-        @apply bg-white border border-gray-300 text-[#007AFF] rounded-lg font-medium;
+        @apply bg-white border border-gray-300 rounded-lg font-medium;
+        color: hsl(var(--primary));
         min-height: 44px;
     }
 
@@ -218,8 +225,9 @@
     }
 
     .ios-input:focus {
-        @apply border-[#007AFF] outline-none;
-        box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.1);
+        outline: none;
+        border-color: hsl(var(--primary));
+        box-shadow: 0 0 0 3px hsl(var(--primary) / 0.08);
     }
 
     /* iOS Navigation Bar */

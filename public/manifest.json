@@ -1,21 +1,21 @@
 {
-  "name": "Ride App - Order a Ride",
-  "short_name": "Ride App",
-  "description": "Your reliable ride-sharing companion with real-time tracking",
+  "name": "GitRide - Order a Ride",
+  "short_name": "GitRide",
+  "description": "GitRide — your reliable ride-sharing companion with real-time tracking",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#F2F2F7",
-  "theme_color": "#007AFF",
+  "theme_color": "#1E73E8",
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/icon-192.png",
+      "src": "/appImages/android/android-launchericon-192-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/icon-512.png",
+      "src": "/appImages/android/android-launchericon-512-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
@@ -23,17 +23,17 @@
   ],
   "categories": ["transportation", "travel"],
   "shortcuts": [
-    {
-      "name": "Order a Ride",
-      "short_name": "Order",
-      "description": "Quickly order a new ride",
-      "url": "/?action=book",
-      "icons": [
         {
-          "src": "/icon-192.png",
-          "sizes": "192x192"
+          "name": "Order a Ride",
+          "short_name": "Order",
+          "description": "Quickly order a new ride",
+          "url": "/?action=book",
+          "icons": [
+            {
+              "src": "/appImages/android/android-launchericon-192-192.png",
+              "sizes": "192x192"
+            }
+          ]
         }
-      ]
-    }
   ]
 }
