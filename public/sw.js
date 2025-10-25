@@ -13,7 +13,7 @@ const CACHE_DURATION = {
 };
 
 // Essential resources to cache immediately (App Shell)
-const PRECACHE_URLS = ["/", "/manifest.json", "/icon-192.png", "/icon-512.png"];
+const PRECACHE_URLS = ["/", "/manifest.json", "/AppImages/android/android-launchericon-192-192.png", "/AppImages/android/android-launchericon-512-512.png"];
 
 // Routes that should be cached
 const CACHEABLE_ROUTES = ["/", "/dashboard", "/rides"];
@@ -298,8 +298,8 @@ async function syncRides() {
 self.addEventListener("push", (event) => {
   const options = {
     body: event.data ? event.data.text() : "New notification",
-    icon: "/icon-192.png",
-    badge: "/icon-192.png",
+    icon: "/AppImages/android/android-launchericon-192-192.png",
+    badge: "/AppImages/android/android-launchericon-192-192.png",
     vibrate: [200, 100, 200],
     data: {
       dateOfArrival: Date.now(),
