@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="240" height="64" viewBox="0 0 240 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">Getride logo</title>
+  <!-- Circle + simple car icon to echo provided design -->
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#1E73E8" />
+      <stop offset="1" stop-color="#165EC5" />
+    </linearGradient>
+  </defs>
+  <g transform="translate(8,4)">
+    <circle cx="28" cy="28" r="24" fill="url(#g)" />
+    <!-- Simple car silhouette -->
+    <g transform="translate(12,18) scale(1)">
+      <rect x="2" y="6" width="28" height="8" rx="2" fill="#fff" />
+      <rect x="6" y="2" width="20" height="8" rx="2" fill="#fff" />
+      <circle cx="8" cy="18" r="3" fill="#fff" />
+      <circle cx="24" cy="18" r="3" fill="#fff" />
+    </g>
+  </g>
+  <!-- Wordmark -->
+  <g transform="translate(72,40)">
+    <text x="0" y="0" font-family="Inter, Arial, Helvetica, sans-serif" font-weight="700" font-size="24" fill="#0f1720">Getride</text>
+  </g>
+</svg>

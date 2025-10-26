@@ -1,15 +1,36 @@
 {
   "pages": {
+    "/_not-found": [
+      "static/chunks/runtime-87a18c5f90eac019.js",
+      "static/chunks/vendor-07caf90075261452.js",
+      "static/chunks/main-app-327412c4370dff6a.js",
+      "static/chunks/app/_not-found-1ee4491f5a09a8a1.js"
+    ],
     "/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/layout.css",
-      "static/chunks/app/layout.js"
+      "static/chunks/runtime-87a18c5f90eac019.js",
+      "static/chunks/vendor-07caf90075261452.js",
+      "static/chunks/main-app-327412c4370dff6a.js",
+      "static/chunks/supabase-121059ca2684db6d.js",
+      "static/chunks/common-6a2f08370bed1059.js",
+      "static/css/38309ee302197a8d.css",
+      "static/chunks/app/layout-c1434d8cfc4f2789.js"
     ],
     "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+      "static/chunks/runtime-87a18c5f90eac019.js",
+      "static/chunks/vendor-07caf90075261452.js",
+      "static/chunks/main-app-327412c4370dff6a.js",
+      "static/chunks/supabase-121059ca2684db6d.js",
+      "static/chunks/common-6a2f08370bed1059.js",
+      "static/chunks/app/page-e6265982becead64.js"
+    ],
+    "/map-demo/page": [
+      "static/chunks/runtime-87a18c5f90eac019.js",
+      "static/chunks/vendor-07caf90075261452.js",
+      "static/chunks/main-app-327412c4370dff6a.js",
+      "static/css/182c4c7108f4b506.css",
+      "static/chunks/mapbox-81c9430b4967d647.js",
+      "static/chunks/common-6a2f08370bed1059.js",
+      "static/chunks/app/map-demo/page-502704389542d99c.js"
     ]
   }
 }
