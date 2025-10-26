@@ -20,14 +20,7 @@ export function UserDashboard() {
 
   return (
     <div className="min-h-screen bg-[#F2F2F7] pb-20">
-      {/* iOS Navigation Bar */}
-      <div className="ios-navbar">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <div className="flex items-center justify-between h-14">
-            <h1 className="text-xl font-semibold text-gray-900">Getride</h1>
-          </div>
-        </div>
-      </div>
+   
 
       <div className="container mx-auto p-4 max-w-6xl space-y-4">
         {/* User Info Card - iOS Style */}

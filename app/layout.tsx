@@ -5,6 +5,7 @@ import { AuthProvider } from "@/lib/auth-context";
 import { Toaster } from "@/components/ui/sonner";
 import { ThemeProvider } from "next-themes";
 import { useEffect } from "react";
+import Image from "next/image";
 
 export default function RootLayout({
   children,
@@ -89,16 +90,15 @@ export default function RootLayout({
           content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes, viewport-fit=cover"
         />
         <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#1E73E8" />
-        <meta
-          name="theme-color"
-          content="#1E73E8"
-          media="(prefers-color-scheme: dark)"
-        />
         <meta
           name="theme-color"
           content="#1E73E8"
           media="(prefers-color-scheme: light)"
+        />
+        <meta
+          name="theme-color"
+          content="#1E73E8"
+          media="(prefers-color-scheme: dark)"
         />
         <title>Getride — Order a Ride</title>
         <meta name="application-name" content="Getride" />
@@ -219,19 +219,6 @@ export default function RootLayout({
         />
       </head>
       <body className="overflow-x-hidden">
-        {/* Top navigation with Getride logo */}
-        <header className="ios-navbar">
-          <div className="container-safe flex items-center gap-3 py-3 px-4">
-            <a href="/" className="inline-flex items-center gap-3">
-              <img
-                src="/getride-logo.png"
-                alt="Getride"
-                className="h-8 w-auto"
-              />
-              <span className="text-lg font-semibold">Getride</span>
-            </a>
-          </div>
-        </header>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
@@ -241,6 +228,21 @@ export default function RootLayout({
         >
           <AuthProvider>
             <div className="min-h-screen w-full overflow-x-hidden">
+              {/* Top navigation with Getride logo */}
+              <header className="ios-navbar">
+                <div className="container-safe flex items-center gap-3 py-3 px-4">
+                  <a href="/" className="inline-flex items-center gap-3">
+                    <Image
+                      src="/getride-logo.png"
+                      alt="Gitride"
+                      width={32}
+                      height={32}
+                      className="h-8 w-auto"
+                    />
+                    <span className="text-lg font-semibold">Gitride</span>
+                  </a>
+                </div>
+              </header>
               {children}
             </div>
             <Toaster

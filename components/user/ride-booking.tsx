@@ -275,49 +275,7 @@ export function RideBooking() {
           </Button>
         </CardContent>
       </Card>
-
-      {/* Quick Tips - iOS List Style */}
-      <div className="ios-list">
-        <div className="ios-list-item flex items-center gap-3">
-          <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
-            <Clock className="w-5 h-5 text-green-600" />
-          </div>
-          <div className="flex-1">
-            <p className="text-[17px] font-medium text-gray-900">Fast Pickup</p>
-            <p className="text-[13px] text-gray-500">
-              Average wait: 3-5 minutes
-            </p>
-          </div>
-        </div>
-
-        <div className="ios-list-item flex items-center gap-3">
-          <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
-            <DollarSign className="w-5 h-5 text-blue-600" />
-          </div>
-          <div className="flex-1">
-            <p className="text-[17px] font-medium text-gray-900">
-              Transparent Pricing
-            </p>
-            <p className="text-[13px] text-gray-500">
-              No hidden fees or surge pricing
-            </p>
-          </div>
-        </div>
-
-        <div className="ios-list-item flex items-center gap-3">
-          <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center flex-shrink-0">
-            <MapPin className="w-5 h-5 text-purple-600" />
-          </div>
-          <div className="flex-1">
-            <p className="text-[17px] font-medium text-gray-900">
-              Accurate Locations
-            </p>
-            <p className="text-[13px] text-gray-500">
-              Powered by Mapbox with real-time search
-            </p>
-          </div>
-        </div>
-      </div>
+    
     </div>
   );
 }

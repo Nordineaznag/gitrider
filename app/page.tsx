@@ -1,11 +1,25 @@
 "use client";
 
 import { useAuth } from "@/lib/auth-context";
-import { LoginForm } from "@/components/auth/login-form";
-import { UserDashboard } from "@/components/user/user-dashboard";
-import { DriverDashboard } from "@/components/driver/driver-dashboard";
 import { DashboardSkeleton } from "@/components/ui/loading-skeleton";
 import { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
+
+// Dynamically import components
+const LoginForm = dynamic(
+  () => import("@/components/auth/login-form").then(mod => ({ default: mod.LoginForm })),
+  { loading: () => <DashboardSkeleton /> }
+);
+
+const UserDashboard = dynamic(
+  () => import("@/components/user/user-dashboard").then(mod => ({ default: mod.UserDashboard })),
+  { loading: () => <DashboardSkeleton /> }
+);
+
+const DriverDashboard = dynamic(
+  () => import("@/components/driver/driver-dashboard").then(mod => ({ default: mod.DriverDashboard })),
+  { loading: () => <DashboardSkeleton /> }
+);
 
 export default function Home() {
   const { user, profile, loading } = useAuth();

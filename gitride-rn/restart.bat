@@ -1,0 +1,6 @@
+@echo off
+echo Cleaning caches...
+if exist .expo rmdir /s /q .expo
+echo.
+echo Starting Expo with clear cache...
+npm start -- --clear

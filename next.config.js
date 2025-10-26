@@ -56,17 +56,33 @@ const nextConfig = {
         ...config.optimization,
         splitChunks: {
           chunks: "all",
+          maxInitialRequests: 25,
+          minSize: 20000,
           cacheGroups: {
             default: false,
             vendors: false,
-            // Vendor chunk
+            // Mapbox specific chunk
+            mapbox: {
+              test: /[\\/]node_modules[\\/](mapbox-gl)[\\/]/,
+              name: "mapbox",
+              chunks: "all",
+              priority: 40,
+            },
+            // Supabase specific chunk
+            supabase: {
+              test: /[\\/]node_modules[\\/]@supabase[\\/]/,
+              name: "supabase",
+              chunks: "all",
+              priority: 30,
+            },
+            // Main vendor chunk
             vendor: {
               name: "vendor",
               chunks: "all",
-              test: /node_modules/,
+              test: /[\\/]node_modules[\\/]/,
               priority: 20,
             },
-            // Common chunk
+            // Common chunk for shared code
             common: {
               name: "common",
               minChunks: 2,
